@@ -1,19 +1,15 @@
 import React from "react";
 import "./styles.css";
 
-/*
-const StyledHeroSection = styled.section`
-*/
-
 const Hero = () => {
-  const one = <h1>Hola, mi nombre es</h1>;
+  const one = <h1>Hello, my name is</h1>;
   const two = <h2 className="big-heading">Javier Ramos.</h2>;
-  const three = <h3 className="big-heading"></h3>;
+  const three = <h3 className="big-heading">I build things</h3>;
   const four = (
     <p>
-      Soy un estudiante de Ingeniería de Sistemas de Información interesado en
-      desarrollo web, data sciente y devops. Actualmente, tengo experiencia
-      pre-profesional en MERN stack.
+      I'm a peruvian student of Systems Engerineering (CS?) interested in web
+      dev, data science, machine learning and devops. Currently working with
+      MERN stack.
     </p>
   );
   const five = (
@@ -27,7 +23,7 @@ const Hero = () => {
   return (
     <section className="hero">
       {items.map((item, i) => (
-        <div key={i}>{item}</div>
+        <React.Fragment key={i}>{item}</React.Fragment>
       ))}
     </section>
   );

@@ -1,13 +1,14 @@
 import React from "react";
 import { navLinks } from "../../services/config";
-import { Link } from "react-router-dom";
 import "./styles.css";
 
 const Nav = () => (
-  <nav>
-    <Logo />
-    <Links />
-  </nav>
+  <header className="nav">
+    <nav className="flex-between">
+      <Logo />
+      <Links />
+    </nav>
+  </header>
 );
 
 export default Nav;
@@ -26,7 +27,7 @@ const Links = () => (
 );
 
 const Logo = () => (
-  <a href="/" aria-label="home">
+  <a href="#hero" aria-label="home">
     <svg
       width="42"
       height="42"

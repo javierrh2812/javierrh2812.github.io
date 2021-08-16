@@ -1,17 +1,17 @@
 import React from "react";
 
-import Hero from "../components/Sections/Hero";
-import About from "../components/Sections/About";
-import Proyects from "../components/Sections/Proyects";
-import Contact from "../components/Sections/Contact";
+import Hero from "../sections/Hero";
+import About from "../sections/About";
+import Proyects from "../sections/Proyects";
+import Contact from "../sections/Contact";
 
 const IndexPage = () => (
-  <>
+  <main>
     <Hero />
     <About />
     <Proyects />
     <Contact />
-  </>
+  </main>
 );
 
 export default IndexPage;

@@ -18,20 +18,11 @@ const About = () => {
       <div className="inner">
         <div>
           <p>
-            Hola! Mi nombre es Javier and I enjoy creating things that live on
-            the internet. My interest in web development started back in 2012
-            when I decided to try editing custom Tumblr themes — turns out
-            hacking together a custom reblog button taught me a lot about HTML
-            &amp; CSS!
+            Hello! My name is Javier and I enjoy creating things that live on
+            the internet. My interest in web development started back in 2019
           </p>
 
-          <p>
-            Fast-forward to today, and I've had the privilege of working at{" "}
-          </p>
-
-          <p>
-            Aquí hay algunas tecnologías con las que he trabajado recientemente:
-          </p>
+          <p>Here are a few technologies I've been working with recently:</p>
         </div>
 
         <ul className="skills-list">

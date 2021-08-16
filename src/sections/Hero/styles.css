@@ -4,7 +4,6 @@
   align-items: flex-start;
   flex-direction: column;
   min-height: 100vh;
-  padding: 0;
 }
 
 h1 {
@@ -37,5 +36,5 @@ p {
   text-decoration: none;
   cursor: pointer;
   transition: var(--transition);
-  margin-top: 5px;
+  margin-top: 20px;
 }
