@@ -1,0 +1,130 @@
+//VARIABLES
+//
+//COLORS
+$white: #e6f1ff;
+$green: #64ffda;
+$green-tint: rgba(100, 255, 218, 0.1);
+
+$blue_dark: #020c1b;
+$blue: #0a192f;
+$blue_light: #112240;
+$blue_lightest: #233554;
+$blue-shadow: rgba(2, 12, 27, 0.7);
+
+$gray_dark: #495670;
+$gray: #8892b0;
+$gray_light: #a8b2d1;
+$gray_lightest: #ccd6f6;
+
+$text-primary: $gray;
+$text-secondary: $gray_lightest;
+$bg-primary: $blue;
+$bg-secondary: $blue_lightest;
+
+
+//FONTSIZES
+$fz-xxs: 12px;
+$fz-xs: 13px;
+$fz-sm: 14px;
+$fz-md: 16px;
+$fz-lg: 18px;
+$fz-xl: 20px;
+$fz-xxl: 22px;
+$fz-heading: 32px;
+$fz-base: 16px;
+
+
+//FONTS
+$font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+  system-ui, sans-serif;
+$font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+
+$border-radius: 4px;
+$nav-height: 100px;
+$nav-scroll-height: 70px;
+$tab-height: 42px;
+$tab-width: 120px;
+
+$md-width: 460px;
+
+:root {
+  font-size: $fz-base;
+  font-family: $font-sans;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: $text_primary $bg_primary;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: $text-primary;
+  background-color: $bg-primary;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1600px;
+  min-height: 100vh;
+  padding: 0 7rem;
+
+  @media (max-width: $md-width) {
+    padding: 0 1.7rem;
+    
+  }
+}
+
+section {
+  padding: 100px 0;
+  max-width: 900px;
+
+  .numbered-heading {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 2.5rem;
+    white-space: nowrap;
+  }
+}
+
+.container {
+  padding: 0.01em 16px;
+}
+.cl-green {
+  color: $green;
+}
+.cl-white {
+  color: $white;
+}
+
+@mixin flex($theme: center) {
+  display: flex;
+  justify-content: $theme;
+  align-items: center;
+}
+.flex-center {
+  @include flex;
+}
+.flex-between {
+  @include flex(space-between);
+}
+
+footer.pageFooter{
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 0.9;
+  margin-bottom: 1px;
+}

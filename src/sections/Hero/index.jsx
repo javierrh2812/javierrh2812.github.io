@@ -1,30 +1,17 @@
 import React from "react";
-import "./styles.css";
+import { presentation } from "../../services/config";
 
 const Hero = () => {
-  const one = <h1>Hello, my name is</h1>;
-  const two = <h2 className="big-heading">Javier Ramos.</h2>;
-  const three = <h3 className="big-heading">I build things</h3>;
-  const four = (
-    <p>
-      I'm a peruvian student of Systems Engerineering (CS?) interested in web
-      dev, data science, machine learning and devops. Currently working with
-      MERN stack.
-    </p>
-  );
-  const five = (
-    <a href="mailto:javier281297@gmail.com" className="email-link">
-      Get In Touch
-    </a>
-  );
-
-  const items = [one, two, three, four, five];
-
+  const { hello, name, phrase, email, description } = presentation;
   return (
-    <section className="hero">
-      {items.map((item, i) => (
-        <React.Fragment key={i}>{item}</React.Fragment>
-      ))}
+    <section id="hero" className="hero">
+      <h1>{hello}</h1>
+      <h2 className="big-heading">{name}.</h2>
+      <h3 className="big-heading">{phrase}</h3>
+      <p>{description}</p>
+      <a href={`mailto:${email}`} className="email-link">
+        Get In Touch
+      </a>
     </section>
   );
 };

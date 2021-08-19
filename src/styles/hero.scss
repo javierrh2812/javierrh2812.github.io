@@ -7,34 +7,40 @@
 }
 
 h1 {
-  color: var(--green);
-  font-family: var(--font-mono);
-  font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+  color: $green;
+  font-family: $font-mono;
+  font-size: clamp($fz-sm, 5vw, $fz-md);
   font-weight: 400;
+}
+
+h2 {
+  color: $text-secondary;
 }
 
 h3 {
   margin-top: 10px;
-  color: var(--slate);
   line-height: 0.9;
 }
 
+.big-heading {
+  margin: 0px;
+  font-size: clamp(30px, 10vw, 80px);
+}
 p {
   margin: 20px 0 0;
   max-width: 540px;
 }
 
 .email-link {
-  color: var(--green);
+  color: $white;
   background-color: transparent;
-  border: 1px solid var(--green);
-  border-radius: var(--border-radius);
+  border: 1px solid $white;
+  border-radius: $border-radius;
   padding: 1.25rem 1.75rem;
-  font-size: var(--fz-sm);
-  font-family: var(--font-mono);
+  font-size: $fz-sm;
+  font-family: $font-mono;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
-  transition: var(--transition);
-  margin-top: 20px;
+  margin-top: 30px;
 }
