@@ -6,9 +6,7 @@ import { proyects } from "../../services/config";
 const Projects = () => (
   <section id="work">
     <h2 className="numbered-heading">Proyects</h2>
-    <div>
     <img src={Meme} />
-    </div>
     <div className="projects-grid">
       {proyects.map((proyect, i) => (
         <ProyectCard proyect={proyect} key={i} />

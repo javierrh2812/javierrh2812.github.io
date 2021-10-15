@@ -7,7 +7,7 @@ import Contact from "../sections/Contact";
 
 const IndexPage = () => (
   <>
-    <main>
+    <main style={{widht: '100%'}}>
       <Hero />
       <About />
       <Proyects />
