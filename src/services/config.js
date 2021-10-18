@@ -15,10 +15,10 @@ export const navLinks = [
     name: "Contact",
     url: "/#contact",
   },
-  {
-    name: "Resume",
-    url: "https://docs.google.com/document/d/12O2Q_EOVO5mM3FMz3sYeTih-9pYomhKeTS-eiU0gSWw/edit?usp=sharing",
-  },
+  //{
+  //  name: "Resume",
+  //  url: "https://docs.google.com/document/d/12O2Q_EOVO5mM3FMz3sYeTih-9pYomhKeTS-eiU0gSWw/edit?usp=sharing",
+  //},
 ];
 
 export const presentation = {
@@ -64,6 +64,14 @@ export const proyects = [
     demo: "https://javierrh2812.github.io",
   },
   {
+    title: "Ecommerce",
+    description: "ECommerce. Para probar conexión con mysql",
+    tech: ["JS, CSS y HTML", "Mysql, Express y Prisma"],
+    repository: "https://github.com/javierrh2812/vanillajs-ecommerce",
+    demo: "https://vanillajs-ecommerce.herokuapp.com",
+  },
+
+  {
     title: "MatriculaXD",
     description: "Sistema de matrícula",
     tech: ["Java", "Javascript", "Spring Framework", "SQL"],
@@ -72,14 +80,14 @@ export const proyects = [
   },
   {
     title: "QueueOverflow",
-    description: "Clon de stack overflow con login y comentarios",
+    description: "Clon de stack overflow",
     tech: ["ReactJS"],
     repository: "https://github.com/javierrh2812/queue-overflow-web",
     demo: undefined,
   },
   {
     title: "BonoCorp",
-    description: "Proyecto para gestionar bonos corporativos",
+    description: "Gestión de bonos corporativos",
     tech: ["Java", "Spring Framework", "SQL"],
     repository: "https://github.com/javierrh2812/BonoCorp",
     demo: undefined,
@@ -93,7 +101,7 @@ export const socialMedia = [
   },
   {
     name: "Instagram",
-    url: "https://www.instagram.com/javierrh2812",
+    url: "https://www.instagram.com/kernel.panic.error",
   },
   //{
   //   name: "Twitter",
